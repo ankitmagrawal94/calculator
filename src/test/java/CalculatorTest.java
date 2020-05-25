@@ -10,4 +10,11 @@ public class CalculatorTest {
 
     }
 
+    @Test
+    public void test_inputNullInputString_resultOfAdditionShouldZero() {
+
+        assertEquals(0, Calculator.add(""));
+
+    }
+
 }
