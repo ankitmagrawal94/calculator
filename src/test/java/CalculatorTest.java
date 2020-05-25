@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 public class CalculatorTest {
 
     @Test
-    public void test_inputStringOfNumbers_resultOfAddition() {
+    public void test_inputStringOfNumbers_resultOfAdditionShouldBeValidNumber() {
 
         assertEquals(30, Calculator.add("10,20"));
 
