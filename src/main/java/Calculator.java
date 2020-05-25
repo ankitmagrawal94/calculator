@@ -13,20 +13,32 @@ public class Calculator {
 
         int sum =0;
 
-        List<Integer> list = new ArrayList<Integer>();
+        try{
+            List<Integer> list = new ArrayList<Integer>();
 
-        String[] inputNumbers = input.split(",");
+            if(input != null){
 
-        for(String s:inputNumbers){
-            int i = Integer.parseInt(s);
-            list.add(i);
+                String[] inputNumbers = input.split(",");
+
+                for(String s:inputNumbers){
+                    int i = Integer.parseInt(s);
+                    list.add(i);
+                }
+            }
+
+            for(int number : list){
+
+                sum = sum + number;
+
+            }
+
+        } catch (NumberFormatException numberFormatException){
+
+            sum = 0;
+
         }
 
-        for(int number : list){
 
-            sum = sum + number;
-
-        }
 
         return sum;
     }
