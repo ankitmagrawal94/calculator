@@ -11,7 +11,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void test_inputNullInputString_resultOfAdditionShouldZero() {
+    public void test_inputEmptyInputString_resultOfAdditionShouldZero() {
 
         assertEquals(0, Calculator.add(""));
 
