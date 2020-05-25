@@ -16,6 +16,15 @@ public class Calculator {
         try{
             List<Integer> list = new ArrayList<Integer>();
 
+
+            if (input == "") {
+
+                return sum;
+
+            }
+
+
+
             if(input != null){
 
                 String[] inputNumbers = input.split(",");
@@ -34,7 +43,6 @@ public class Calculator {
 
         } catch (NumberFormatException numberFormatException){
 
-            sum = 0;
 
         }
 
